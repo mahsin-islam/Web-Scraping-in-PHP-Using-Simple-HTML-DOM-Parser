@@ -1,8 +1,8 @@
 # Web Scraping in PHP Using Simple HTML DOM Parser
 
-###  `WebApps Link :` [Live Site](https://ushakindergarten.com/htmlparser)
-###  `Simple HTML DOM Parser GitHub Repository :` [GitHub Repository](https://github.com/mahsin-islam/Web-Scraping-in-PHP-Using-Simple-HTML-DOM-Parser.git)
-###  `Youtube Video Tutorial :` [Video Tutorial](https://youtu.be/eL-RC7eKQHk)
+###  `WebApps Link :` [Live Site](https://rebrand.ly/3fy2n3l)
+###  `Simple HTML DOM Parser GitHub Repository :` [GitHub Repository](https://rebrand.ly/uexkzbv)
+###  `Youtube Video Tutorial :` [Video Tutorial](https://rebrand.ly/gbyp3zy)
 ###  `Presentation Link :` [Presentation Link](https://rebrand.ly/18693f)
 ###  `Prize Bond Website :` [Prize Bond Website](https://www.bb.org.bd/en/index.php/investfacility/prizebond)
 ###  `Simple HTML DOM Parser Documentation :` [Simple HTML DOM Parser Documentation](https://simplehtmldom.sourceforge.io/docs/1.9/index.html)
