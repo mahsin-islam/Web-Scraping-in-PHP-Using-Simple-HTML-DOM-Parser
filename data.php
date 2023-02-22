@@ -1,8 +1,6 @@
 <?php
-require_once('simple_html_dom.php');
-
-$gSearchData = $_POST['gsearch'];
-
+require_once('simple_html_dom.php'); // add library file
+$gSearchData = $_POST['gsearch']; //Using POST
 $request = array(
     'http' => array(
         'header' => array("Content-Type: application/x-www-form-urlencoded"),
@@ -12,21 +10,17 @@ $request = array(
         )),
     )
 );
-
 $context = stream_context_create($request);
 $html = file_get_html("https://www.bb.org.bd/en/index.php/investfacility/prizebond", true, $context);
-
 $table = $html->find('table', 0);
-
 $rowData = array();
 foreach ($table->find('tr') as $row) {
-    $data = array();
+    $data = array();     // initialize array to store the cell data from each row
     foreach ($row->find('td') as $cell) {
-        $data[] = $cell->plaintext;
+        $data[] = $cell->plaintext;  // push the cell's text to the array
     }
     $rowData[] = $data;
 }
-
 $tdArray = array();
 $thArray = array();
 $i = 0;
@@ -40,24 +34,18 @@ foreach ($rowData as $row => $tr) {
         }
     }
 }
-
 $doc = new DOMDocument();
 libxml_use_internal_errors(true);
-
-$doc->loadHTML($html);
+$doc->loadHTML($html); // loads html
 $xpath = new DOMXPath($doc);
-$nodelist = $xpath->query("//img");
-$nodelist = $xpath->query('//table/tr/td/img');
-$node = $nodelist->item(0); 
+// $nodelist = $xpath->query("//img");
+$nodelist = $xpath->query('//table/tr/td/img'); // find image
+$node = $nodelist->item(0);  // gets the 1st image
 $value = $node->attributes->getNamedItem('src')->nodeValue;
 $value = str_replace("../", "", $value);
-$imgValue = "https://www.bb.org.bd/" . $value;
-
+$imgValue = "https://www.bb.org.bd/" . $value; // modify image path adding url of server location
 array_push($tdArray, $imgValue);
-
-
-print_r($tdArray);
-
+// print_r($tdArray);
 ?>
 <!DOCTYPE html>
 <html>
