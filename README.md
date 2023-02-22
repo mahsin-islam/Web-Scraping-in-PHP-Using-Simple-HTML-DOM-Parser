@@ -8,10 +8,8 @@
 ###  `Simple HTML DOM Parser Documentation :` [Simple HTML DOM Parser Documentation](https://simplehtmldom.sourceforge.io/docs/1.9/index.html)
 ###  `Simple HTML DOM Parser Library Download Page :` [Library Download](https://sourceforge.net/projects/simplehtmldom/)
 
-
 # Web Application Details Features 
 - Table Data Scrap from Prize Bond website using Simple HTML DOM Parser
-
 ###
 # Key Technology
 - PHP 
